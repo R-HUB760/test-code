@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --white: #fff;
+    --black: #000;
+    --red: red;
+    --green: green;
+    --h:clamp(1rem,5.5vw,14rem);
+    --p:clamp(.8rem,1.3vw,2rem);
+}
+body{
+    background: url('school.jpg') no-repeat fixed center center;
+    background-size: cover;
+    color: var(--white);
+}
+a{
+    color: var(--white);
+}
+/* Top bar */
+.container1{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+.nav_list1 li{
+    display: inline;
+    margin: 7px 7px;
+    font-size: 20px;
+    
+}
+.nav_list1 li a{
+    text-decoration: none;
+    padding: 5px;
+}
+.nav_list1 li a:hover{
+    background: rgb(196, 196, 238);
+    color: var(--black);
+}
+/* Middle Google css  */
+.container2{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    position: relative;
+}
+.nav_list2 li{
+    display: block;
+    margin: 10px 5px;
+    text-align: center;
+}
+/* .container3{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+} */
+#google{
+    font-size: var(--h);
+    color: var(--white);
+}
+#search{
+    width:min(60rem, 25rem);
+    min-height: 45px;
+    padding-inline-start: 48px;
+    padding-inline-end:52px;
+    font-size: var(--p);
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+}
+/* Icon */
+.icon{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top:0;
+    margin: -30px 20px;
+    color: #000;
+    z-index:100;
+    flex-shrink: 0;
+    outline: none;
+    pointer-events:auto;
+    padding: 0;
+}
+
+/* Below Search Box **/
+#nav_list2_block{
+    display: inline-block;
+    position: absolute;
+    margin-top: 300px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#nav_list2_block li{
+display: inline-block;
+margin: auto 10px;
+}
+#nav_list2_block li a{
+    text-decoration: none;
+}
+
